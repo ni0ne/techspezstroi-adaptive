@@ -1,0 +1,33 @@
+.benefits {
+  &__item {
+    height: 320px;
+    background-color: #e8edf0;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 5px;
+  }
+  &__image {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #538ac8;
+    background-image: url(../img/stability.svg);
+    background-size: 44px 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &__image--partnership {
+      background-image: url(../img/partnership.svg);
+    }
+    &__image--expirience {
+      background-image: url(../img/experience.svg);
+    }
+  }
+  &__text {
+    margin: 0;
+    font-size: 16px;
+  }
+}

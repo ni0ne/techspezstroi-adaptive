@@ -1,0 +1,63 @@
+.offer {
+  z-index: -1;
+  padding-top: 115px;
+  padding-bottom: 125px;
+
+  background-color: #e7edef;
+  background-image: url(../img/offer-background.png);
+  background-position: right;
+  background-repeat: no-repeat;
+
+  &__text {
+    margin-top: 50px;
+  }
+
+  &__button {
+    position: relative;
+    margin-top: 70px;
+  
+    display: flex;
+    align-items: center;
+  
+    width: 200px;
+    height: 55px;
+    background-color: #538ac8;
+    border-radius: 6px;
+  
+    &--arrow {
+      position: absolute;
+      display: inherit;
+    
+      width: 55px;
+      height: 55px;
+      border-radius: 5px 0 0 5px;
+  
+      background-color: #ecf3f7;
+      background-image: url(../img/arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+  
+      left: 0px;
+      transition: left 0.8s;
+    }
+  
+    &--text {
+      position: absolute;
+      left: 85px;
+      font-size: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      transition: left 0.8s;
+    }
+  
+    &:hover &--arrow {
+      left: 145px;
+      border-radius: 0 5px 5px 0;
+    }
+  
+    &:hover &--text {
+      left: 35px;
+    }
+  }
+}
