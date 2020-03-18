@@ -1,27 +1,26 @@
 .copyright {
-  padding-top: 40px;
-  padding-bottom: 50px;
-
-  &--flex {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
-  }
-  &__link {
-    
-    position: relative;
-    color: #121212;
-    &--border {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  &__item {
+    display: inline;
+    margin: 0;
+    font-size: 14px;
+    text-align: right;
+    &--underline {
       text-decoration: underline;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: -5px;
-      width: 10px;
-      height: 15px;
-      background: right url(../img/perfomance-link.png) no-repeat;
+    &--block {
+      display: inline-block;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+        background: right url(../img/perfomance-link.png) no-repeat;
+      }
     }
   }
 }

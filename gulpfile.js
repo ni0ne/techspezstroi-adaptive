@@ -15,7 +15,7 @@ gulp.task("less", function() {
     .pipe(gulp.dest("./css"));
 });
 
-gulp.task("stream", function() {
+gulp.task("watch", function() {
     //endless stream mode
     gulp.watch("./less/**/*.less", gulp.parallel('less'));
 })
