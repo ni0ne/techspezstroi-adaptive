@@ -12,7 +12,7 @@ gulp.task("less", function() {
         paths: [path.join(__dirname, "less", "includes")]
       })
     )
-    .pipe(gulp.dest("./css"));
+    .pipe(gulp.dest("./build/css"));
 });
 
 gulp.task("watch", function() {
