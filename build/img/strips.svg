@@ -1,11 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="165" height="508.184" viewBox="0 0 165 508.184">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #fff;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Shape_3_copy_9" data-name="Shape 3 copy 9" class="cls-1" d="M1424.51,960.081l0.98-.163,84,508-0.98.16Zm20,0,0.98-.163,84,508-0.98.16Zm20,0,0.98-.163,84,508-0.98.16Zm20,0,0.98-.163,84,508-0.98.16Zm20,0,0.98-.163,84,508-0.98.16Z" transform="translate(-1424.5 -959.906)"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="165" height="508.184" viewBox="0 0 165 508.184"><path data-name="Shape 3 copy 9" d="M.01.175L.99.012l84 508-.98.16zm20 0l.98-.163 84 508-.98.16zm20 0l.98-.163 84 508-.98.16zm20 0l.98-.163 84 508-.98.16zm20 0l.98-.163 84 508-.98.16z" fill="#fff" fill-rule="evenodd"/></svg>
