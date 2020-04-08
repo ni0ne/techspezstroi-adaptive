@@ -177,6 +177,7 @@ gulp.task('watch', function () {
   gulp.watch(path.watch.js, gulp.series('js:build'));
   gulp.watch(path.watch.img, gulp.series('image:build'));
   gulp.watch(path.watch.fonts, gulp.series('fonts:build'));
+  //gulp.pipe(browserSync.reload({ stream: true }));
 });
 
 // задача по умолчанию
