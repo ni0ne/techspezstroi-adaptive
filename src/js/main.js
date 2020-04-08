@@ -108,29 +108,25 @@ window.onclick = function (event) {
 }
 
 // Mask
-$('input[name="phone"]').mask('+7 (000) 000-00-00');
+$('input[name="phone"]').mask('+7(000)000-0000');
 
 // Validation
 
+jQuery.validator.addMethod("checkMask", function(value, element) {
+  return /\+\d{1}\(\d{3}\)\d{3}-\d{4}/g.test(value); 
+});
+
 $(function(){
   $('#form').validate({
-    // rules: {
-    //   name: {
-    //     required: true,
-    //     minlength: 2
-    //   }
-    // },
-    // messages: {
-    //   name: {
-    //     required: "Поле 'Имя' обязательно к заполнению",
-    //     minlength: "Введите не менее 2-х символов в поле 'Имя'"
-    //   },
-    //   phone: {
-    //     required: "Поле 'Email' обязательно к заполнению",
-    //     email: "Необходим формат адреса email" 
-    //   }
-    // }
+    rules: {
+      phone: {
+        checkMask: true
+      }
+    },
+    messages: {
+      phone: {
+        checkMask: "Введите полный номер телефона"
+      }
+    }
   });
-}); 
-
-// $("input.phone").mask("(999) 999-9999");
+});
